@@ -7,6 +7,6 @@
   :dependencies [[net.sourceforge.plantuml/plantuml "7965"]
                  [domaintypes/core "1.0.0"]]
   :scm {:name "git"
-         :url "https://github.com/friemen/domaintypes/lein-domaintypesdoc"}
+         :url "https://github.com/friemen/domaintypes"}
   :repositories [["clojars" {:url "https://clojars.com/repo"
                              :creds :gpg}]])
