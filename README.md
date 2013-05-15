@@ -11,6 +11,9 @@ Modeling domain data on the basis of Clojure records.
    that generates PlantUML class diagram and PNG image from namespaces containing
    domain types.
 
+ - [samples](samples) contains a demonstration how the macros are used.
+ 
+
 A sample model would be described like this
 
     (defsimpletype required-string "A non-blank string" string? #(> (count %) 0))
@@ -32,6 +35,6 @@ A corresponding graphical overview of complex types looks like this
 
 ![UML diagram of complextypes](domaintypes.png)
 
-The image file is created within the target directory by the command
+The image file in the samples/target dir is created by the command
 
-    lein domaintypesdoc
+    $ lein domaintypesdoc
