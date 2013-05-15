@@ -6,4 +6,6 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [domaintypes/core "1.0.0"]]
   :plugins [[domaintypes/lein-domaintypesdoc "1.0.0"]]
-  :domaintypesdoc-for [samples.projectmanagement])
+  :domaintypesdoc-for [samples.projectmanagement]
+  :scm {:name "git"
+         :url "https://github.com/friemen/domaintypes/samples"})

@@ -5,4 +5,6 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :eval-in-leiningen true
   :dependencies [[net.sourceforge.plantuml/plantuml "7965"]
-                 [domaintypes/core "1.0.0"]])
+                 [domaintypes/core "1.0.0"]]
+  :scm {:name "git"
+         :url "https://github.com/friemen/domaintypes/lein-domaintypesdoc"})
