@@ -12,7 +12,7 @@ include in the UML class diagram.
 
     :domaintypesdoc-for [ns1 ns2 ...]
 
-See also the [sample project](../sample/project.clj).
+See also the [sample project.clj](../samples/project.clj).
     
 To run the plugin type
 

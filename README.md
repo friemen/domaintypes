@@ -21,8 +21,11 @@ In your project.clj add a dependency
 
 and a plugin dependency
 
-    [domaintypes/lein-domaintypedoc "1.0.1"]
+    [domaintypes/lein-domaintypesdoc "1.0.1"]
 
+Specify additionally with the `:domaintypesdoc-for` key which namespaces should be
+searched for domain types to be included in a UML class diagram.
+See the [sample project.clj](samples/project.clj).
 
 A [sample model](samples/src/samples/projectmanagement.clj) would be described like this
 
