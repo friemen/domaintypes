@@ -12,9 +12,19 @@ Modeling domain data on the basis of Clojure records.
    domain types.
 
  - [samples](samples) contains a demonstration how the macros are used.
- 
 
-A sample model would be described like this
+Usage
+-----
+In your project.clj add a dependency
+
+    [domaintypes/core "1.0.1"]
+
+and a plugin dependency
+
+    [domaintypes/lein-domaintypedoc "1.0.1"]
+
+
+A [sample model](samples/src/samples/projectmanagement.clj) would be described like this
 
     (defsimpletype required-string "A non-blank string" string? #(> (count %) 0))
     (defsimpletype task-status "Status of a Task" #{:new :in-progress :done})
