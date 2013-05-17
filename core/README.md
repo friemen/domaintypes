@@ -30,7 +30,7 @@ The metadata map for each field contains:
 
 Syntax
 ------
-The domaintypes/core namespace offers two macros and the valid? function:
+The domaintypes.core namespace offers two macros and the valid? function:
 
     (defsimpletype <sym> <description> <constraint-fn>*) 
 	
@@ -47,4 +47,10 @@ pointing to a metadata map.
     (valid? <record-instance>)
 
 returns true if the instance of a record matches all constraints.
+The constraints are a set of
 
+ - Functions attached to simple types.
+ - Functions implicitly derived from field metadata map.
+ - Functions attached to a field using the :constraints key in the metadata map.
+ - Functions attached to complex types that take the whole record instance.
+ 

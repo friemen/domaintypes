@@ -5,8 +5,8 @@ Modeling domain data on the basis of Clojure records.
 
 Motivation
 ----------
-Default records are a more formal (and performant) way for describing and 
-keeping domain data than pure maps. To model and discuss domain data types
+Default Clojure records are a more formal (and performant) way for describing
+and keeping domain data than pure maps. To model and discuss domain data types
 with domain experts it is often desirable to attach domain type information
 to fields of records. It is also beneficial to formalize the range
 of admissable values for each field, therefore one should be able to
@@ -19,7 +19,7 @@ The core project offers functionality to define simple types
 (instances represent scalar values) and
 complex types (instances represent structured data).
 
-The resulting plain Clojure Records do not put constraints on the data
+The resulting plain Clojure records do not put constraints on the data
 that one can store in instances. Instead a valid? function checks
 on-demand if the data meets the constraints, for instance right before
 data is persisted in a database, or after deserialization from a
