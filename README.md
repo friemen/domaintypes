@@ -3,6 +3,8 @@ domaintypes
 
 Modeling domain data on the basis of Clojure records.
 
+[![Build Status](https://travis-ci.org/friemen/domaintypes.png?branch=master)](https://travis-ci.org/friemen/domaintypes)
+
 Motivation
 ----------
 Default Clojure records are a more formal (and performant) way for describing
@@ -54,7 +56,7 @@ searched for domain types to be included in a UML class diagram.
 See the [sample project.clj](samples/project.clj).
 
 A [sample model](samples/src/samples/projectmanagement.clj) would be described like this
-
+```clojure
     (defsimpletype required-string "A non-blank string" string? #(> (count %) 0))
     (defsimpletype task-status "Status of a Task" #{:new :in-progress :done})
 
@@ -68,7 +70,7 @@ A [sample model](samples/src/samples/projectmanagement.clj) would be described l
 
     (defcomplextype Sprint [name  {:dt required-string}
                             tasks {:dt Task :card [0 any]}])
-
+```
 
 A corresponding graphical overview of complex types looks like this
 
@@ -77,3 +79,11 @@ A corresponding graphical overview of complex types looks like this
 The image file in the samples/target dir is created by the command
 
     $ lein domaintypesdoc
+
+
+License
+=======
+
+Copyright 2013 F.Riemenschneider
+
+Distributed under the Eclipse Public License, the same as Clojure.
