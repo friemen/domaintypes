@@ -6,5 +6,5 @@
   :dependencies [[org.clojure/clojure "1.5.1"]]
   :scm {:name "git"
         :url "https://github.com/friemen/domaintypes/core"}
-  :repositories [["clojars" {:url "https://clojars.com/repo"
+  :repositories [["clojars" {:url "https://clojars.org/repo"
                              :creds :gpg}]])

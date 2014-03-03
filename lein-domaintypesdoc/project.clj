@@ -8,5 +8,5 @@
                  [domaintypes/core "1.0.1"]]
   :scm {:name "git"
          :url "https://github.com/friemen/domaintypes/lein-domaintypes"}
-  :repositories [["clojars" {:url "https://clojars.com/repo"
+  :repositories [["clojars" {:url "https://clojars.org/repo"
                              :creds :gpg}]])
